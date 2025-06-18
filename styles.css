@@ -15,18 +15,14 @@ html {
     scroll-behavior: smooth;
 }
 
+
 nav {
     width: 100%;
     background-color: var(--hc);
     padding: 10px 0;
     text-align: center;
     box-sizing: border-box;
-    grid-column: 1 / -1; /* Caso queira garantir em layouts grid */
-    position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-    
+    grid-column: 1 / -1;
 }
 
 nav ul {
@@ -55,6 +51,8 @@ nav ul li a:hover {
     background-color: var(--mc);
     color: #fff;
 }
+
+
 
 article {
     display: flex;
