@@ -9,6 +9,7 @@ body {
     line-height: 1.5em;
     --hc: #082048;
     --mc: #052f04ba;
+    padding-top: 60px; /* altura da nav para evitar sobreposição */
 }
 
 html {
@@ -22,6 +23,11 @@ nav {
     text-align: center;
     box-sizing: border-box;
     grid-column: 1 / -1; /* Caso queira garantir em layouts grid */
+    position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+    
 }
 
 nav ul {
