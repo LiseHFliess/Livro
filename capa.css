@@ -1,10 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Estilos base */
 body {
+    display: grid;
     justify-content: center;
     margin: 0;
     background-color: #333;
@@ -16,21 +12,74 @@ body {
     --mc: #052f04ba;
 }
 
-
-.container {
-  width: 60vw;          /* Reduzido de 80vw para 60vw */
-  height: 75vh;         /* Reduzido de 90vh para 75vh */
-  max-width: 600px;     /* Dimensão máxima em desktops */
-  max-height: 850px;
-  box-shadow: 0 0 30px rgba(0,0,0,0.6);
-  overflow: hidden;
-  border-radius: 8px;
+html {
+    scroll-behavior: smooth;
 }
 
+nav {
+    width: 100%;
+    background-color: var(--hc);
+    padding: 10px 0;
+    text-align: center;
+    box-sizing: border-box;
+    grid-column: 1 / -1;
+}
 
-.imagem-box {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #f2f2ef;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--mc);
+    color: #fff;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    padding: 40px 80px 40px 40px;
+    margin: 10px;
+    max-width: 640px;
+    background-color: #f2f2ef;
+}
+
+/* Imagem com tamanho de folha A4 */
+img.a4 {
+    width: 794px;
+    height: 1000px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilo para impressão */
+@media print {
+    body {
+        background: none;
+    }
+
+    img.a4 {
+        width: 21cm;
+        height: 29.7cm;
+        page-break-inside: avoid;
+    }
 }
