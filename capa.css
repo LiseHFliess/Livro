@@ -14,14 +14,15 @@ body {
 }
 
 .container {
-  width: 80vw;          /* Tamanho da "folha" */
-  height: 90vh;
-  max-width: 800px;
-  max-height: 1000px;
+  width: 60vw;          /* Reduzido de 80vw para 60vw */
+  height: 75vh;         /* Reduzido de 90vh para 75vh */
+  max-width: 600px;     /* Dimensão máxima em desktops */
+  max-height: 850px;
   box-shadow: 0 0 30px rgba(0,0,0,0.6);
   overflow: hidden;
   border-radius: 8px;
 }
+
 
 .imagem-box {
   width: 100%;
