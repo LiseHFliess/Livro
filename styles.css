@@ -16,9 +16,12 @@ html {
 }
 
 nav {
+    width: 100%;
     background-color: var(--hc);
     padding: 10px 0;
     text-align: center;
+    box-sizing: border-box;
+    grid-column: 1 / -1; /* Caso queira garantir em layouts grid */
 }
 
 nav ul {
