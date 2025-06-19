@@ -1,0 +1,147 @@
+body {
+ display: grid;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #333;
+  font-family: "Alegreya", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5em;
+  max-width: 794px; /* largura A4 em pixels */
+  padding: 0 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.menu ul li {
+    background: #990505;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu ul li:hover {
+    background: #d80606;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    padding: 40px 80px 40px 40px;
+    margin: 0px;
+    max-width: 640px;
+    background-color: #f2f2ef;
+}
+
+.logo {
+           position: absolute;
+    top: 79px;
+    left: 640px;
+    width: 100px;
+    height: auto;
+        }
+h1 {
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--hc);
+    margin: 1em 0 0;
+}
+
+h2 {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    word-spacing: 2px;
+    color: var(--hc);
+    margin: 1em 0 0;
+}
+
+h3 {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 3em 0 2em;
+    text-align: center;
+    word-spacing: 2px;
+    opacity: 0.75;
+}
+
+h3:before {
+    display: inline-block;
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><path fill="currentColor" d="..."/></svg>');
+    padding-right: 0.5em;
+    width: 1em;
+    height: 1em;
+    vertical-align: text-bottom;
+}
+
+section {
+    margin: 0;
+    position: relative;
+}
+
+section::before {
+    position: absolute;
+    left: calc(100% + 60px);
+    top: 0;
+    transform-origin: top left;
+    transform: rotate(90deg);
+    content: attr(aria-label);
+    width: max-content;
+    color: var(--mc);
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 14px;
+    word-spacing: 1.4px;
+    padding-left: 20px;
+}
+
+p {
+    word-spacing: 1px;
+    text-indent: 2em;
+    text-align: justify;
+    hyphens: auto;
+    margin: 1em 200px 0;
+}
+
+section:first-of-type p:first-of-type {
+    text-indent: 0;
+}
+
+p span:first-child {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--hc);
+}
+
+section:last-child {
+    height: 15em;
+    overflow: visible clip;
+    background: linear-gradient(rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
