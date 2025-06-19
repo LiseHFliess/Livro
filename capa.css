@@ -1,55 +1,46 @@
 /* Estilos base */
 body {
-    display: grid;
+   
+        display: grid
+;
     justify-content: center;
-    margin: 0;
+    margin: 0 auto;
     background-color: #333;
     font-family: "Alegreya", serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5em;
-    --hc: #082048;
-    --mc: #052f04ba;
+    max-width: 794px;
+    padding: 0 10px;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-nav {
-    width: 100%;
-    background-color: var(--hc);
-    padding: 10px 0;
-    text-align: center;
-    box-sizing: border-box;
-    grid-column: 1 / -1;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
+.menu ul {
     list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 10px;
+.menu ul li {
+    background: #990505;
+    padding: 15px 20px;
+    border-radius: 10px;
 }
 
-nav ul li a {
-    font-family: "Alegreya Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    color: #f2f2ef;
+.menu ul li a {
     text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-nav ul li a:hover {
-    background-color: var(--mc);
-    color: #fff;
+.menu ul li:hover {
+    background: #d80606;
 }
 
 article {
@@ -65,7 +56,7 @@ article {
 
 /* Imagem com tamanho de folha A4 */
 img.a4 {
-    width: 794px;
+    width:794px;
     height: 1000px;
     display: block;
     margin: 0 auto;

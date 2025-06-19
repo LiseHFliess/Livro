@@ -16,42 +16,30 @@ html {
 }
 
 
-nav {
-  background-color: var(--hc);
-  padding: 10px 0;
-  text-align: center;
-  box-sizing: border-box;
-  border-radius: 8px;
-  margin: 20px 0;
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.menu ul li {
+    background: #990505;
+    padding: 15px 20px;
+    border-radius: 10px;
 }
 
-nav ul li {
-  display: inline-block;
-  margin: 0 10px;
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-nav ul li a {
-  font-family: "Alegreya Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  color: #f2f2ef;
-  text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  transition: background-color 0.3s;
+.menu ul li:hover {
+    background: #d80606;
 }
-
-nav ul li a:hover {
-  background-color: var(--mc);
-  color: #fff;
-}
-
 
 article {
     display: flex;
